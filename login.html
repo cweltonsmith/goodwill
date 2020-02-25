@@ -133,7 +133,25 @@
 		</header>
 	</div>
 
+	<form class="login" method="post" action="/Home/Donations" id="frmLogin" name="frmLogin">
 
+			<div class="lblloyaltyID">
+				<label for="loyaltyID">Loyalty ID: </label>
+			</div>
+			<div class="loyaltyID">
+				<input type="text"  id="loyaltyID" placeholder="Loyalty Id" required />
+			</div>
+			<div class="lbllastname">
+				<label for="txtLastName">Last Name: </label>
+			</div>
+			<div class="txtlastname">
+				<input type="text" name="txtLastName" id="txtLastName" placeholder="Last name..." required />
+			</div>
+			<div class="btnview">
+				<input class="button" id="btnVwDonations" name="btnVwDonations" type="submit" value="View Donations" />
+			</div>
+
+	</form>
 </div>
 
 

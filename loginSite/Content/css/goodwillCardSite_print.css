@@ -1,0 +1,112 @@
+
+@media print
+{
+   *
+   {
+      color:                  #333;
+      background-color:       initial;
+   }
+   #masthead, #colophon
+   {
+      display:                none;
+      margin:                 0;
+   }
+
+   .wrapper
+   {
+      padding:                0;
+      width:                  93%;
+   }
+
+   .donator-info, .donations table
+   {
+      box-shadow:             none;
+   }
+
+   .donator-info
+   {
+      border:                 0;
+      display:                inline-block;
+      background-color:       initial;
+
+      font-variant:           initial;
+      font-variant-position:  initial;
+      font-size:              12pt;
+
+      margin:                 0 0 20px;
+      padding:                0;
+
+      grid-template-columns:  1fr;
+      grid-template-rows:     1fr 1fr 1fr 1fr;
+   }
+
+   .donator-info > div
+   {
+      font-variant:           initial;
+      font-variant-position:  initial;
+      font-size:              12pt;
+      text-align:             left;
+      line-height:            initial;
+   }
+
+   .donator-name::first-letter
+   {
+      float:                     none;
+      font-size:                 12pt;
+      padding-top:               0;
+   }
+
+   .donator-pipe
+   {
+      display:                none;
+   }
+
+   .donator-name
+   {
+      grid-column:            1;
+      grid-row:               1;
+   }
+
+   .donator-address
+   {
+      grid-column:            1;
+      grid-row:               2;
+   }
+
+   .donator-phonenumber
+   {
+      grid-column:            1;
+      grid-row:               3;
+   }
+
+   .donator-cardnumber
+   {
+      grid-column:            1;
+      grid-row:               4;
+      margin:                 0;
+      padding:                0;
+   }
+
+   .output-format
+   {
+      display:                none;
+   }
+
+   .donations table
+   {
+      border:                 1px solid rgb(198, 89, 17);
+      width:                  100%;
+   }
+
+   .donations table thead tr th
+   {
+      color:                  #333;
+      padding-left:           4px;
+   }
+
+   .legal
+   {
+      width:                  100%;
+   }
+}
+

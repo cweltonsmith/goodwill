@@ -1,0 +1,567 @@
+/*
+   Gray        - bdbdbd
+   - Button Colors
+      Light       - rgb(252, 216, 140) / #fcd88c
+      Med         - rgb(237, 180, 59)  / #edb43b
+      Dark        - rgb(221, 136, 76)  / #dd884c
+      Dark:Hover  - rgb(241, 153, 0)   / #f19900
+
+   *** Orange
+   Light          - rgb(252, 216, 140) / #fcd88c
+X  Alt-Light      - rgb(255, 240, 207) / #fff0cf 
+   Medium         - rgb(237, 180, 59)  / #edb43b
+   Alt-Medium     - rgb(233, 199, 143) / #e9c78f
+   Dark           - rgb(221, 136, 76)  / #dd884c
+   Dark:Hover     - rgb(241, 153, 0)   / #f19900
+                  - rgb(198, 89, 17)
+   *** Blue
+   Light          - rgb(220, 220, 231)
+   Medium         - rgb(184, 204, 228)
+   Dark           - rgb(15, 36, 64)
+*/
+
+:root
+{
+   --color:								#333;
+   --alert-color:						#ff0000;
+   --shadow:							7px 9px 10px #888;
+   --display:							inline-block;
+   --center:							0 auto;
+
+   --input-focus-color:				#f19900;
+
+   --donator-txt-color:				var(--donation-txt-color);
+   --donator-border:					1px solid var(--donator-clr-dark);
+   --donator-bgcolor:				var(--donator-clr-light);
+   --donator-clr-light:				rgb(255, 240, 207);
+   --donator-clr-med:				rgb(237, 180, 59);
+   --donator-clr-dark:				rgb(221, 136, 76);
+   --donator-clr-darker:			rgb(241, 153, 0);
+   
+   --donation-txt-color:			rgb(198, 89, 17);
+   --donation-border:				1px solid var(--donation-txt-color);
+   --donation-odd-row:				var(--donator-clr-light);
+   --donation-even-row:				var(--donator-clr-med);
+}
+
+*
+{
+   margin:								0;
+   padding:								0;
+   box-sizing:							border-box;
+}
+
+.wrapper
+{
+   padding:                      0 15px;
+   margin:                       0 auto;
+   width:                        90%;
+}
+
+.banner
+{
+   margin-bottom:                20px;
+}
+
+.form-wrapper
+{
+   border:                       1px solid #808080;
+   box-shadow:                   4px 5px 8px;
+   border-radius:                14px;
+   height:                       340px;
+   width:                        525px;
+   margin:                       8px auto 8px;
+   position:                     relative;
+}
+
+.form-wrapper:before
+{
+   background-image:             url('../img/gw_card.png');
+   background-position:          50% 0;
+   border-radius:                14px;
+   background-repeat:            no-repeat;
+   background-size:              cover;
+   content:                      '';
+   opacity:                      .90;
+   top:                          0;
+   left:                         0;
+   width:                        100%;
+   height:                       100%;
+   position:                     absolute;
+
+   z-index:                      -1;
+}
+
+header, footer
+{
+   display:                      block;
+   margin:                       8px auto 0;
+   width:                        500px;
+}
+
+.card_title header
+{
+   font-size:                    1.5em;
+}
+
+.login
+{
+   font-size:                    1.4em;
+   top:                          16px;
+   width:                        500px;
+   height:                       285px;
+   position:                     relative;
+   margin:                       0 auto;
+}
+
+.card_grid
+{
+   /*border:                       1px solid red;*/
+   display:                      grid;
+   height:                       100%;
+
+   grid-template-columns:        132px 1fr 1fr 1fr;
+   grid-template-rows:           38px 38px auto 38px;
+   grid-gap:                     10px 6px;
+}
+
+.lblcardnum
+{
+   
+   grid-column:                  1;
+   grid-row:                     1;
+}
+
+.txtcardnum
+{
+   grid-column:                  2;
+   grid-row:                     1;
+}
+
+.lbllastname
+{
+   grid-column:                  1;
+   grid-row:                     2;
+}
+
+.txtlastname
+{
+   grid-column:                  2;
+   grid-row:                     2;
+}
+
+.lblyear
+{
+   grid-column:                  3;
+   grid-row:                     1;
+   justify-self:                 right;
+}
+
+.ddyear
+{
+   grid-column:                  4;
+   grid-row:                     1;
+}
+
+.btnview
+{
+   grid-column:                  3 / span 2;
+   grid-row:                     4;
+   justify-self:                 right;
+}
+
+footer
+{
+   display:                      block;
+   margin:                       2px auto 0;
+   text-align:                   right;
+}
+
+.site-footer
+{
+   margin-top:                   60px;
+}
+
+input, select
+{
+   box-sizing:                   border-box;
+   height:                       34px;
+   padding-left:                 4px;
+}
+
+input[type=text]::-webkit-input-placeholder
+{
+   color:                        #bdbdbd;
+}
+
+input[type=text]
+{
+   width:                        185px;
+}
+
+input[type=text], select
+{
+   border:                       1px solid transparent;
+   border-radius:                3px;
+   box-shadow:                    0 0 3px #ccc, 0 10px 15px #eee inset;
+   padding:                      0 16px 0 4px;
+   font-size:                    .7em;
+}
+
+input[type=submit]
+{
+   border:                       0px solid;
+   background-color:             #edb43b;
+   color:                        #fff;
+   font-size:                    .8em;
+   padding:                      0 10px;
+   width:                        100%;
+}
+
+input[type=submit]:hover
+{
+   background-color:             #f19900;
+}
+
+input:required
+{
+   background:                   #fff url(../img/red_asterisk16.png) no-repeat 98% center;
+}
+
+select:required
+{
+   background:                   #fff url(../img/red_asterisk16.png) no-repeat 70% center;
+}
+
+input:required, select:required
+{
+   background-size:              11px;
+}
+
+input[type=text]:focus, select:focus
+{
+   background-color:             #fff;
+   border:                       1px solid var(--input-focus-color);
+   box-shadow:                   2px 2px 8px var(--input-focus-color),
+                                -2px 2px 8px var(--input-focus-color),
+                                -2px -2px 8px var(--input-focus-color),
+                                 2px -2px 8px var(--input-focus-color);
+}
+
+label
+{
+   color:                        #fff;
+   display:                      inline-block;
+   font-weight:                  700;
+   top:                          1px;
+   position:                     relative;
+}
+
+.notice
+{
+   margin:                       0 auto;
+   padding:                      0 10px;
+   max-width:                    625px;
+   font-size:                    .9em;
+   font-weight:                  bold;
+   color:                        #555;
+}
+
+.notice > p
+{
+   line-height:                  1.15em;
+   white-space:                  normal;
+   padding:                      0;
+   margin:                       0 0 8px 0;
+   text-align:                   center;
+   text-justify:                 distribute-all-lines;
+}
+
+.title
+{
+   color:                        #666;
+   font-weight:                  700;
+}
+.required
+{
+   color:                        #ff4646;
+   font-weight:                  900;
+   font-size:                    1em;
+   margin-bottom:                10px;
+}
+
+a
+{
+   color:                        var(--donator-clr-dark);
+   font-weight:                  600;
+}
+a img
+{
+   border:                       0;
+}
+
+.alert
+{
+   color:                     var(--alert-color);
+   font-weight:               600;
+}
+
+.donator-info
+{
+   border:                    var(--donator-border);
+   background-color:          var(--donator-bgcolor);
+   box-shadow:                var(--shadow);
+   color:                     var(--donator-txt-color);
+   display:                   grid;
+
+   grid-template-columns:     auto 12px auto 12px auto;
+   grid-template-rows:        30px auto;
+   grid-gap:                  3px 6px;
+
+   padding:                   8px;
+
+   min-width:                 600px;
+}
+
+.donator
+{
+   padding-top:               3px;
+   text-align:                center;
+}
+
+.donator-name
+{
+   font-size:                 1.2em;
+   font-weight:               900;
+   font-variant:              small-caps;
+
+   grid-column:               1;
+   grid-row:                  1;
+}
+
+.donator-name::first-letter
+{
+   float:                     left;
+   font-size:                 3.6em;
+   padding-top:               .105em;
+}
+
+.donator-address
+{
+   grid-column:               3;
+   grid-row:                  1;
+}
+
+.donator-phonenumber
+{
+   grid-column:               5;
+   grid-row:                  1;
+}
+
+.donator-cardnumber
+{
+   grid-column:               1 / span 5;
+   grid-row:                  2;
+   padding:                   5px 0;
+   margin-left:               4.5em;
+}
+
+.donator-cardnumber p
+{
+   line-height:               1.2em;
+   margin-bottom:             0;
+}
+
+.donator-cardnumber p strong
+{
+   font-weight:               900;
+}
+
+.donator-pipe
+{
+   font-size:                 1.8em;
+}
+
+.donator-pipe::before
+{
+   content:                   "|";
+   float:                     left;
+   margin-top:               -0.2em;
+   margin-left:              -2px;
+   text-align:                center;
+}
+
+.donations table
+{
+   border:                    var(--donator-border);
+   border-spacing:            1px;
+   box-shadow:                var(--shadow);
+   
+   text-align:                left;
+
+   margin:                    var(--center);
+   padding:                   2px;
+   width:                     90%;
+   min-width:                 600px;
+}
+.donations table tr td
+{
+	font-size:						.90em;
+   padding:                   6px 2px;
+   padding-left:              4px;
+}
+
+.donations table thead tr th
+{
+   font-size:                 .95em;
+   font-weight:               600;
+   color:                     var(--donator-txt-color);
+   padding:                   4px 0;
+   border-bottom:             1px solid #ccc;
+}
+
+.donations table thead tr:first-child th:first-child
+{
+   text-align:                center;
+   vertical-align:            middle;
+   width:                     200px;
+   padding-left:             -2px;
+}
+
+.donations table thead tr:last-child th:nth-child(1)
+{
+    text-align:               center;
+}
+.donations table tbody tr td:nth-child(3), .donations table tbody tr td:nth-child(4)
+{
+    width:                    100px;
+}
+
+.donations table tbody tr td:first-child
+{
+    text-align:               center;
+}
+
+.donations table tbody tr td:nth-child(2)
+{
+    text-align:               center;
+    width:                    50px;
+}
+
+.donations table tbody tr:nth-child(odd)
+{
+   background-color:          var(--donation-odd-row);
+}
+
+.donations table tbody tr:nth-child(even)
+{
+   background-color:          var(--donation-even-row);
+}
+
+.donations table tbody tr:nth-child(odd) td
+{
+   border-right:              1px solid var(--donator-clr-med);
+   border-left:               1px solid var(--donator-clr-light);
+}
+
+.donations table tbody tr:nth-child(even) td
+{
+   border-right:               1px solid var(--donator-clr-med);
+}
+
+.donations table tbody tr td:first-child
+{
+   border-left:               0;
+}
+
+.donations table tbody tr td:last-child
+{
+   border-right:              0;
+}
+
+.legal
+{
+   color:                     var(--color);
+   font-size:                 .85em;
+   margin:                    var(--center);
+   padding:                   2em;
+   width:                     75%;
+}
+
+.output-format
+{
+   /*border:                    1px solid #555;*/
+
+   display:                   grid;
+
+   grid-template-columns:     repeat(2, 1fr);
+
+   width:                     90%;
+   min-width:                 600px;
+   padding:                   0 5px;
+   margin:                    var(--center);
+   margin-top:                1em;
+   margin-bottom:             .5em;
+}
+
+.output-format div
+{
+   color:                     var(--donator-clr-darker);
+   display:                   block;
+
+}
+
+/*.output-format div a
+{
+   display:                   inline-block;
+}*/
+
+.output-format div span
+{
+   display:                   block;
+   padding-right:             3px;
+}
+
+.output-format div span a 
+{
+   display:                   inline-block;
+   vertical-align:            middle;
+   padding-top:               4px;
+}
+
+.output-format div span a i
+{
+   vertical-align:            middle;
+   margin-top:                -5px;
+}
+
+.excel
+{
+   /*border:                    1px solid blue;*/
+   grid-column:               1;
+}
+
+.excel a
+{
+   z-index:                   1000;
+}
+
+.fa-file-excel-o
+{
+   font-size:                 32px;
+   color:                     #1a681b; /* Dark green color */
+   z-index:                   0;
+}
+
+.print-preview a
+{
+   /*border:                    1px solid red;*/
+}
+
+.print-preview
+{
+   /*border:                    1px solid blue;*/
+
+   grid-column:               2;
+   text-align:                right;
+}

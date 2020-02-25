@@ -250,7 +250,7 @@ input[type=text]:focus, select:focus
 
 label
 {
-   color:                        #fff;
+   color:                        rgb(33, 78, 163);
    display:                      inline-block;
    font-weight:                  700;
    top:                          1px;

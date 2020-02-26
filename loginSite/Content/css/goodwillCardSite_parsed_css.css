@@ -3762,7 +3762,7 @@ textarea.timely .ai1ec-input-lg {
    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
    font-weight: 500;
    line-height: 1.1;
-   color:;
+   /* color:; */
 }
 
    .timely h1 small, .timely h1 .ai1ec-small, .timely h2 small, .timely h2 .ai1ec-small, .timely h3 small, .timely h3 .ai1ec-small, .timely h4 small, .timely h4 .ai1ec-small, .timely h5 small, .timely h5 .ai1ec-small, .timely h6 small, .timely h6 .ai1ec-small, .timely .ai1ec-h1 small, .timely .ai1ec-h1 .ai1ec-small, .timely .ai1ec-h2 small, .timely .ai1ec-h2 .ai1ec-small, .timely .ai1ec-h3 small, .timely .ai1ec-h3 .ai1ec-small, .timely .ai1ec-h4 small, .timely .ai1ec-h4 .ai1ec-small, .timely .ai1ec-h5 small, .timely .ai1ec-h5 .ai1ec-small, .timely .ai1ec-h6 small, .timely .ai1ec-h6 .ai1ec-small {
@@ -7583,8 +7583,8 @@ input.ai1ec-datepicker[readonly], input.ai1ec-timepicker[readonly] {
 .ai1ec-allday-badge {
    background: #566675;
    border-radius: 0.9em;
-   -webkit-box-shadow:;
-   box-shadow:;
+   /* -webkit-box-shadow:;
+   box-shadow:; */
    color: #fff;
    display: inline-block;
    font-size: 0.85em;

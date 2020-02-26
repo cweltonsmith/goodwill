@@ -2,7 +2,7 @@
 	font-family: 'Goodwill-Omaha-Icons';
 	src:url('fonts/icomoon.eot?aezggd');
 	src:url('../fonts/icomoon.eot?#iefixaezggd') format('embedded-opentype'),
-		url('https://cweltonsmith.github.io/goodwill/loginSite/Content/fonts/icomoon.woff') format('woff'),
+		url('https://cweltonsmith.github.io/goodwill/loginSite/Content/fonts/icomoon.woff?aezggd') format('woff'),
 		url('../fonts/icomoon.ttf?aezggd') format('truetype'),
 		url('../fonts/icomoon.svg?aezggd#icomoon') format('svg');
 	font-weight: normal;

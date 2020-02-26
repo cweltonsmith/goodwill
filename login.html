@@ -109,7 +109,7 @@
 		<div class="banner">
 			<img class="default-image" src="loginSite/Content/img/goodwillCardSite_banner-main.jpg" />
 			<header class="entry-header">
-				<h1 class="banner-title">Goodwill Card</h1>
+				<h1 class="banner-title">Donation History</h1>
 			</header>
 		</div>
 		<div id="donation-content">
@@ -136,19 +136,20 @@
 	<form class="login" method="post" action="/Home/Donations" id="frmLogin" name="frmLogin">
 
 			<div class="lblloyaltyID">
-				<label for="loyaltyID">Loyalty ID: </label>
+				<label for="loyaltyID" class="dark-blue">Loyalty ID: </label>
 			</div>
 			<div class="loyaltyID">
 				<input type="text"  id="loyaltyID" placeholder="Loyalty Id" required />
 			</div>
-			<div class="lbllastname">
-				<label for="txtLastName">Last Name: </label>
+			<div class="lblPassowrd">
+				<label for="txtPassword" class="dark-blue">Password: </label>
 			</div>
-			<div class="txtlastname">
-				<input type="text" name="txtLastName" id="txtLastName" placeholder="Last name..." required />
+			<div class="txtPassword">
+				<input type="text" name="txtPassword" id="txtPassword" placeholder="Last name..." required />
 			</div>
+			</br>
 			<div class="btnview">
-				<input class="button" id="btnVwDonations" name="btnVwDonations" type="submit" value="View Donations" />
+				<input class="button" id="getLoginInformation" name="btnVwDonations" type="submit" value="View Donation History" />
 			</div>
 
 	</form>

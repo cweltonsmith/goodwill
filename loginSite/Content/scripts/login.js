@@ -9,10 +9,11 @@ $(document).ready(function () {
 			type: 'POST',
 			dataType: 'json',
 			data: person,
-			success: function (data, textStatus, xhr) {
+			success: function (data) {
 				console.log(data);
+				window.location = "yearselection.html";
 			},
-			error: function (xhr, textStatus, errorThrown) {
+			error: function (textStatus, errorThrown) {
 				console.log(errorThrown);
 				console.log(textStatus);
 			}

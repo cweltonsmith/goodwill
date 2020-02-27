@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 	$("#getLoginInformation").click(function () {
 		var person = new Object();

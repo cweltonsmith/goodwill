@@ -9,8 +9,8 @@ $(document).ready(function () {
 			dataType: 'json',
 			data: person,
 			success: function (data) {
-				console.log(data);
 				window.location = "yearselection.html";
+				console.log(data);
 			},
 			error: function (textStatus, errorThrown) {
 				console.log(errorThrown);

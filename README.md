@@ -1,7 +1,7 @@
 # goodwill
 Omaha Goodwill website
 
-Original website is [here](https://www.goodwillomaha.org/)
+Original website is [here](https://www.goodwillomaha.org/){:target="_blank"}
 
 ## Sprint 1: 
 - Focus on getting the login page with the correct nav/footer/ as well as CSS.

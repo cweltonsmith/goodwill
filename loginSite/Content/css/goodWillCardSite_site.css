@@ -8,7 +8,7 @@
 
    *** Orange
    Light          - rgb(252, 216, 140) / #fcd88c
-X  Alt-Light      - rgb(255, 240, 207) / #fff0cf 
+X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    Medium         - rgb(237, 180, 59)  / #edb43b
    Alt-Medium     - rgb(233, 199, 143) / #e9c78f
    Dark           - rgb(221, 136, 76)  / #dd884c
@@ -37,7 +37,7 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    --donator-clr-med:				rgb(237, 180, 59);
    --donator-clr-dark:				rgb(221, 136, 76);
    --donator-clr-darker:			rgb(241, 153, 0);
-   
+
    --donation-txt-color:			rgb(198, 89, 17);
    --donation-border:				1px solid var(--donation-txt-color);
    --donation-odd-row:				var(--donator-clr-light);
@@ -127,7 +127,7 @@ header, footer
 
 .lblcardnum
 {
-   
+
    grid-column:                  1;
    grid-row:                     1;
 }
@@ -191,8 +191,14 @@ input, select
 
 input[type=text]::-webkit-input-placeholder
 {
-   color:                        #bdbdbd;
+       color:                        #bdbdbd;
 }
+
+input[type=password]::-webkit-input-placeholder
+{
+       color:                        #bdbdbd;
+}
+
 
 input[type=text]
 {
@@ -207,6 +213,16 @@ input[type=text], select
    padding:                      0 16px 0 4px;
    font-size:                    .7em;
 }
+
+input[type=password], select
+{
+   border:                       1px solid transparent;
+   border-radius:                3px;
+   box-shadow:                    0 0 3px #ccc, 0 10px 15px #eee inset;
+   padding:                      0 16px 0 4px;
+   font-size:                    .7em;
+}
+
 
 input[type=submit]
 {
@@ -239,6 +255,16 @@ input:required, select:required
 }
 
 input[type=text]:focus, select:focus
+{
+   background-color:             #fff;
+   border:                       1px solid var(--input-focus-color);
+   box-shadow:                   2px 2px 8px var(--input-focus-color),
+                                -2px 2px 8px var(--input-focus-color),
+                                -2px -2px 8px var(--input-focus-color),
+                                 2px -2px 8px var(--input-focus-color);
+}
+
+input[type=password]:focus, select:focus
 {
    background-color:             #fff;
    border:                       1px solid var(--input-focus-color);
@@ -396,7 +422,7 @@ a img
    border:                    var(--donator-border);
    border-spacing:            1px;
    box-shadow:                var(--shadow);
-   
+
    text-align:                left;
 
    margin:                    var(--center);
@@ -522,7 +548,7 @@ a img
    padding-right:             3px;
 }
 
-.output-format div span a 
+.output-format div span a
 {
    display:                   inline-block;
    vertical-align:            middle;

@@ -123,15 +123,13 @@ header, footer
    padding-bottom: 20px;
 }
 
-/* .login
+.login
 {
-   font-size:                    1.4em;
-   top:                          16px;
-   width:                        500px;
-   height:                       285px;
-   position:                     relative;
-   margin:                       0 auto;
-} */
+   text-align: left;
+   padding-left: 67px;
+   padding-top: 40px;
+   
+}
 
 .card_grid
 {

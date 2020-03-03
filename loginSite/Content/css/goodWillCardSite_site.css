@@ -157,6 +157,12 @@ header, footer
    justify-self:                 right;
 }
 
+.lblloyaltyID, .loyaltyID, .txtPassword, .lblPassowrd
+{
+   text-align: center;
+   padding: 5px;
+}
+
 .ddyear
 {
    grid-column:                  4;

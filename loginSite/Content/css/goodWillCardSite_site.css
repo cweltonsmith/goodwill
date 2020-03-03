@@ -50,31 +50,49 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    padding:								0;
    box-sizing:							border-box;
 }
-
+/* 
 .wrapper
 {
    padding:                      0 15px;
    margin:                       0 auto;
-   width:                        90%;
-}
+} */
 
 .banner
 {
    margin-bottom:                20px;
 }
 
-.form-wrapper
+.form-wrapper-login
 {
+   font-size:                    1.4em;
    border:                       1px solid #808080;
    box-shadow:                   4px 5px 8px;
    border-radius:                14px;
-   height:                       340px;
-   width:                        525px;
-   margin:                       8px auto 8px;
+   height:                       30%;
+   width:                        25%;
+   margin: 0 auto;
    position:                     relative;
+   text-align: center;
+   justify-content: space-between;
+   background-color: rgb(236, 236, 236);
 }
 
-.form-wrapper:before
+.form-wrapper-yearSelection
+{
+   font-size:                    1.4em;
+   border:                       1px solid #808080;
+   box-shadow:                   4px 5px 8px;
+   border-radius:                14px;
+   height:                       30%;
+   width:                        25%;
+   margin: 0 auto;
+   position:                     relative;
+   text-align: center;
+   justify-content: space-between;
+   background-color: rgb(236, 236, 236);
+}
+
+/* .form-wrapper:before
 {
    background-image:             url('../img/gw_card.png');
    background-position:          50% 0;
@@ -90,7 +108,7 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    position:                     absolute;
 
    z-index:                      -1;
-}
+} */
 
 header, footer
 {
@@ -102,9 +120,10 @@ header, footer
 .card_title header
 {
    font-size:                    1.5em;
+   padding-bottom: 20px;
 }
 
-.login
+/* .login
 {
    font-size:                    1.4em;
    top:                          16px;
@@ -112,7 +131,7 @@ header, footer
    height:                       285px;
    position:                     relative;
    margin:                       0 auto;
-}
+} */
 
 .card_grid
 {
@@ -157,26 +176,25 @@ header, footer
    justify-self:                 right;
 }
 
-.lblloyaltyID, .loyaltyID, .txtPassword, .lblPassowrd
-{
-   text-align: center;
-   padding: 5px;
-}
+
 
 .ddyear
 {
    grid-column:                  4;
    grid-row:                     1;
-   padding: 80px;
+   padding-top: 30px;
 
 }
 
 .btnview
 {
-   grid-column:                  3 / span 2;
-   grid-row:                     4;
-   justify-self:                 right;
-   padding: 50px;
+   /* grid-column:                  3 / span 2;
+   grid-row:                     4; */
+   justify-self:                 center;
+   padding-right: 60px;
+   padding-left: 60px;
+   padding-top: 50px;
+   padding-bottom: 50px;
 }
 
 footer
@@ -290,6 +308,7 @@ label
 {
    color:                        #666;
    font-weight:                  700;
+   margin: 0 auto;
 }
 .required
 {

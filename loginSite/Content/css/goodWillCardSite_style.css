@@ -1746,7 +1746,7 @@ object {
 /* Success Story */
 .success-story img {
    width: 100%;
-   padding-top: 80px;    
+   padding-top: 80px;
 }
 
 .videoWrapper {
@@ -1762,7 +1762,7 @@ object {
    left: 0;
    width: 100%;
    height: 100%;
-    
+
 }
 
 
@@ -2434,7 +2434,7 @@ body .soliloquy-container, body .soliloquy-container * {
 
 /*	COLUMN WIDTH ON DISPLAYS +768px
    You might need to play with media queries here to suite your design. */
-@media ( min-width : 741px ) 
+@media ( min-width : 741px )
 {
 
    #primary {

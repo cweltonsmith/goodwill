@@ -8,9 +8,10 @@ $(document).ready(function () {
 			type: 'POST',
 			dataType: 'json',
 			data: person,
-			success: function (token) {
+			success: function (result) {
 				window.location = "yearselection.html";				
-				console.log(token);
+				localStorage.accessToken = result.accessToken;
+				
 			},
 			error: function (textStatus, errorThrown) {
 				console.log(errorThrown);

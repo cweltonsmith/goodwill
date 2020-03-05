@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$("#getLoginInformation").click(function () {
-		var person = new Object();
+		let person = new Object();
 		person.loyaltyID = $('#loyaltyID').val();
 		person.password = $('#txtPassword').val();
 		$.ajax({
@@ -9,15 +9,16 @@ $(document).ready(function () {
 			dataType: 'json',
 			data: person,
 			success: function (result) {
-				window.location = "yearselection.html";				
+				window.location = "yearselection.html";
 				localStorage.accessToken = result.accessToken;
-				
+
 			},
 			error: function (textStatus, errorThrown) {
 				console.log(errorThrown);
 				console.log(textStatus);
 			}
 		});
+
 	});
 });
 

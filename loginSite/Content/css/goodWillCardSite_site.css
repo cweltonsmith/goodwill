@@ -84,13 +84,12 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    box-shadow:                   4px 5px 8px;
    border-radius:                14px;
    height:                       30%;
-   width:                        50%;
+   width:                        25%;
    margin: 0 auto;
    position:                     relative;
    text-align: center;
    justify-content: space-between;
    background-color: rgb(236, 236, 236);
-   
 }
 
 /* .form-wrapper:before
@@ -173,7 +172,6 @@ header, footer
    grid-column:                  3;
    grid-row:                     1;
    justify-self:                 right;
-
 }
 
 
@@ -182,8 +180,7 @@ header, footer
 {
    grid-column:                  4;
    grid-row:                     1;
-   display: inline-block;
-   padding-top: 15px;
+   padding-top: 30px;
 
 }
 
@@ -192,19 +189,10 @@ header, footer
    /* grid-column:                  3 / span 2;
    grid-row:                     4; */
    justify-self:                 center;
-   padding-left: 60px;
    padding-right: 60px;
-   padding-bottom: 30px;
-   display: inline-block;
-   
-}
-.printbtnview
-{
-   /* grid-column:                  3 / span 2;
-   grid-row:                     4; */
-   justify-self:                 center;
-   display: inline-block;
-   width: 100px;
+   padding-left: 60px;
+   padding-top: 50px;
+   padding-bottom: 50px;
 }
 
 footer

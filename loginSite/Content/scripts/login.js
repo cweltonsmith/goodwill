@@ -4,7 +4,7 @@ $(document).ready(function () {
 		person.loyaltyID = $('#loyaltyID').val();
 		person.password = $('#txtPassword').val();
 		$.ajax({
-			url: 'https://goodwillomaha-nw2020.azurewebsites.net/user/login',
+			url: 'https://goodwill-nw2020.herokuapp.com/customer/login',
 			type: 'POST',
 			dataType: 'json',
 			data: person,

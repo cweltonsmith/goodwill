@@ -28,7 +28,7 @@ $(document).ready(function () {
 			},
 			type: 'GET',
 			success: function (result) {
-				/* Stuff Here */
+				console.log(result);
 			},
 			error: function (textStatus, errorThrown) {
 				console.log(errorThrown);

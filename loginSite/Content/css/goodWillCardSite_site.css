@@ -224,6 +224,16 @@ input[type=password]::-webkit-input-placeholder
    color:                        #bdbdbd;
 }
 
+input[type=password]::-webkit-input-placeholder
+{
+   color:                        #bdbdbd;
+}
+input[type=password]::-moz-placeholder /* THIS FIXED PLACEHOLDER-TOOK ME OVER AN HOUR TO GET*/
+{
+   color:                        #666;
+}
+
+
 input[type=text]
 {
    width:                        185px;
@@ -232,6 +242,7 @@ input[type=text]
 input[type=password]
 {
    width:                        185px;
+   
 }
 
 input[type=text], select
@@ -249,6 +260,7 @@ input[type=password], select
    border-radius:                3px;
    box-shadow:                    0 0 3px #ccc, 0 10px 15px #eee inset;
    padding:                      0 16px 0 4px;
+   
    font-size:                    .7em;
 }
 
@@ -264,7 +276,7 @@ input[type=submit]
 
 input[type=password]
 {
-   border:                       0px solid;
+   border:                       1px solid;
    background-color:             #edb43b;
    color:                        #fff;
    font-size:                    .8em;

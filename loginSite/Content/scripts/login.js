@@ -9,7 +9,7 @@ $(document).ready(function () {
 			dataType: 'json',
 			data: person,
 			success: function (result) {
-				window.location = "yearselection.html";
+				window.location = "donationHistory.html";
 				localStorage.accessToken = result.accessToken;
 
 			},

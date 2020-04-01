@@ -57,13 +57,17 @@ $(document).ready(function () {
 					donationTable.append(trow)
 				}
 				for (let i = 0; i < result.history.length; i++) {
-					trow = $("<tr>")
-
-					dateCell = $("<td>")
-					dateCell.text(result.history[i].date)
-					trow.append(dateCell)
-
+					// this assumes result.history[i].items.length >= 1
 					for (let j = 0; j < result.history[i].items.length; j++) {
+						trow = $("<tr>")
+
+						dateCell = $("<td>")
+						// One date cell for the entire transaction
+						if (j == 0) {
+							dateCell.text(result.history[i].date)
+						}
+						trow.append(dateCell)
+
 						itemCellQuant = $("<td>")
 						itemCellQuant.text(result.history[i].items[j].quantity)
 						trow.append(itemCellQuant)
@@ -80,8 +84,8 @@ $(document).ready(function () {
 						itemCellDesc.text(result.history[i].items[j].description)
 						trow.append(itemCellDesc)
 
+						donationTable.append(trow)
 					}
-					donationTable.append(trow)
 				}
 
 			},
@@ -92,5 +96,3 @@ $(document).ready(function () {
 		});
 	});
 });
-
-

@@ -31,17 +31,18 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    --input-focus-color:				#f19900;
 
    --donator-txt-color:				var(--donation-txt-color);
-   --donator-border:					1px solid var(--donator-clr-dark);
+   --donator-border:					1px solid #808080;
    --donator-bgcolor:				var(--donator-clr-light);
-   --donator-clr-light:				rgb(255, 240, 207);
-   --donator-clr-med:				rgb(237, 180, 59);
-   --donator-clr-dark:				rgb(221, 136, 76);
+   --donator-clr-light:				 #edb43b;
+   --donator-clr-med:			     rgb(78,116,162);
+   --donator-clr-dark:				#f19900;
    --donator-clr-darker:			rgb(241, 153, 0);
 
-   --donation-txt-color:			rgb(198, 89, 17);
-   --donation-border:				1px solid var(--donation-txt-color);
+   --donation-txt-color:	         rgb(78,116,162);
+   --donation-border:				2px solid var(--donation-txt-color);
    --donation-odd-row:				var(--donator-clr-light);
    --donation-even-row:				var(--donator-clr-med);
+   --donation-border-radious:    14px;
 }
 
 *
@@ -84,7 +85,7 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    box-shadow:                   4px 5px 8px;
    border-radius:                14px;
    height:                       30%;
-   width:                        25%;
+   width:                        50%;
    margin: 0 auto;
    position:                     relative;
    text-align: center;
@@ -181,6 +182,8 @@ header, footer
    grid-column:                  4;
    grid-row:                     1;
    padding-top: 30px;
+   display: inline-block;
+   padding-top: 15px;
 
 }
 
@@ -189,10 +192,19 @@ header, footer
    /* grid-column:                  3 / span 2;
    grid-row:                     4; */
    justify-self:                 center;
-   padding-right: 60px;
    padding-left: 60px;
-   padding-top: 50px;
-   padding-bottom: 50px;
+   padding-right: 60px;
+   padding-bottom: 30px;
+   display: inline-block;
+}
+
+.printbtnview
+{
+   /* grid-column:                  3 / span 2;
+   grid-row:                     4; */
+   justify-self:                 center;
+   display: inline-block;
+   width: 100px;
 }
 
 footer
@@ -465,18 +477,21 @@ a img
    margin-top:               -0.2em;
    margin-left:              -2px;
    text-align:                center;
+
 }
 
 .donations table
 {
    border:                    var(--donator-border);
+   border-radius:                14px;
    border-spacing:            1px;
    box-shadow:                var(--shadow);
+   background-color: rgb(236, 236, 236);
 
    text-align:                left;
 
    margin:                    var(--center);
-   padding:                   2px;
+   padding:                   10px;
    width:                     90%;
    min-width:                 600px;
 }
@@ -538,6 +553,7 @@ a img
 {
    border-right:              1px solid var(--donator-clr-med);
    border-left:               1px solid var(--donator-clr-light);
+   
 }
 
 .donations table tbody tr:nth-child(even) td

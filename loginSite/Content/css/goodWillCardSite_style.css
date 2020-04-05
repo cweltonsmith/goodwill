@@ -217,10 +217,10 @@ img.push-left {
    font-size: 17px;
 }
 .phone{
-   display: inline-block;
+   display: inline-blocks;
    font-size: 17px;
 }
-.loyaltyID{
+.loyaltyID2{
    display: inline-block;
    font-size: 17px;
 }

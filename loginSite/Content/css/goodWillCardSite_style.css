@@ -214,10 +214,15 @@ img.push-left {
 }
 .FullName{
    display: inline-block;
-   font-size: 18px;
+   font-size: 17px;
 }
 .phone{
    display: inline-block;
+   font-size: 17px;
+}
+.loyaltyID{
+   display: inline-block;
+   font-size: 17px;
 }
 
 

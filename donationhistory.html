@@ -124,55 +124,56 @@
 			</header>
 		</div>
 		<div id="donation-content">
-			
 
 
-				<div class="form-wrapper-user">
-					<div>
-						<label  class="dark-blue" name="loyaltyID">Loyalty ID: </label>
-					</div>
-					<div>
-						<label  class="dark-blue" >Full Name: </label>  <div class='FullName' id='FullName'></div>
-						
-					</div>
 
-					<div>
-						<label  class="dark-blue">Phone Number: </label>
-						<div class='phone' id='phone'></div>
-					</div>
-					<div>
-						<label  class="dark-blue">Address: </label>
-						<div class='address' id='address'></div>
-					</div>
-					
-
+			<div class="form-wrapper-user">
+				<div>
+					<label class="dark-blue" name="loyaltyID">Loyalty ID: </label>
+					<div class='loyaltyID' id='loyaltyID'></div>
+				</div>
+				<div>
+					<label class="dark-blue">Full Name: </label>
+					<div class='FullName' id='FullName'></div>
 				</div>
 
-				<div class="wrapper" id="divWrapper">
+				<div>
+					<label class="dark-blue">Phone Number: </label>
+					<div class='phone' id='phone'></div>
+				</div>
+				<div>
+					<label class="dark-blue">Address: </label>
+					<div class='address' id='address'></div>
+				</div>
+
+
+			</div>
+
+			<div class="wrapper" id="divWrapper">
 
 
 
-					<div class="form-wrapper-yearSelection">
-						<div class="lblyear">
-							<label for="selYear" class="dark-blue">Select Year: </label>
-						</div>
-						<div class="ddyear">
-							<select name="selYear" id="selYear" required style="width: 200px;">
-							</select>
-						</div>
-						<div class="btnview">
-							<input type="submit" id="getSelectedYear" name="btnVwDonations" class="button"
-								value="Proceed" />
-						</div>
-						<div class="printbtnview">
-							<button id = "print" class="fa fa-print" style="font-size:48px; color:
+				<div class="form-wrapper-yearSelection">
+					<div class="lblyear">
+						<label for="selYear" class="dark-blue">Select Year: </label>
+					</div>
+					<div class="ddyear">
+						<select name="selYear" id="selYear" required style="width: 200px;">
+						</select>
+					</div>
+					<div class="btnview">
+						<input type="submit" id="getSelectedYear" name="btnVwDonations" class="button"
+							value="Proceed" />
+					</div>
+					<div class="printbtnview">
+						<button id="print" class="fa fa-print" style="font-size:48px; color:
 							 #f19900; background-color: rgb(236, 236, 236)" onclick="printPage();"></button>
-						</div>
 					</div>
 				</div>
+			</div>
 
 
-			
+
 			<div class="donations white" id="donations">
 				<br />
 				<table>

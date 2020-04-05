@@ -27,7 +27,7 @@ $(document).ready(function () {
 		type: 'GET',
 		success: function (result) {
 			
-
+			$('#loyaltyID').append(result.loyaltyID)
 			$('#FullName').append(result.firstName + ' ' + result.lastName)
 			$('#phone').append(result.phone)
 			$('#address').append(result.address)

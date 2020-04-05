@@ -225,6 +225,11 @@ img.push-left {
    font-size: 17px;
 }
 
+.address{
+   display: inline;
+   font-size: 17px;
+}
+
 
 .dark-blue-bg {
    background: #4e74a2;

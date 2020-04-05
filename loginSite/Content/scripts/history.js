@@ -26,11 +26,12 @@ $(document).ready(function () {
 		},
 		type: 'GET',
 		success: function (result) {
-			
+			console.log(result)
 			$('#loyaltyID').append(result.loyaltyID)
 			$('#FullName').append(result.firstName + ' ' + result.lastName)
 			$('#phone').append(result.phone)
-			$('#address').append(result.address)
+			$('#address').append(result.address.line1 + ' ' + result.address.line2 + ' ' + '<br />' +
+			 result.address.city + ', ' + result.address.state + ' ' + result.address.zip)
 		},
 		error: function (textStatus, errorThrown) {
 			console.log(errorThrown);

@@ -212,6 +212,14 @@ img.push-left {
 .dark-blue {
    color: #4e74a2;
 }
+.FullName{
+   display: inline-block;
+   font-size: 18px;
+}
+.phone{
+   display: inline-block;
+}
+
 
 .dark-blue-bg {
    background: #4e74a2;

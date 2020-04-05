@@ -129,16 +129,20 @@
 
 				<div class="form-wrapper-user">
 					<div>
-						<label  class="dark-blue">Loyalty ID: </label>
+						<label  class="dark-blue" name="loyaltyID">Loyalty ID: </label>
 					</div>
 					<div>
-						<label  class="dark-blue">Full Name: </label>
+						<label  class="dark-blue" >Full Name: </label>  <div class='FullName' id='FullName'></div>
+						
 					</div>
+
 					<div>
 						<label  class="dark-blue">Phone Number: </label>
+						<div class='phone' id='phone'></div>
 					</div>
 					<div>
 						<label  class="dark-blue">Address: </label>
+						<div class='address' id='address'></div>
 					</div>
 					
 
@@ -161,7 +165,8 @@
 								value="Proceed" />
 						</div>
 						<div class="printbtnview">
-							<a href="#"><i class="fa fa-print" style="font-size:48px; color: #f19900;"></i> </a>
+							<button id = "print" class="fa fa-print" style="font-size:48px; color:
+							 #f19900; background-color: rgb(236, 236, 236)" onclick="printPage();"></button>
 						</div>
 					</div>
 				</div>
@@ -241,6 +246,7 @@
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src='loginSite/Content/scripts/history.js'></script>
+	<script src='loginSite/Content/scripts/print.js'></script>
 </body>
 
 </html>

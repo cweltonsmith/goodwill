@@ -19,6 +19,24 @@ $(document).ready(function () {
 			console.log(textStatus);
 		}
 	});
+	$.ajax({
+		url: 'https://goodwill-nw2020.herokuapp.com/customer/info',
+		headers: {
+			"Authorization": "Bearer " + accessToken
+		},
+		type: 'GET',
+		success: function (result) {
+			
+
+			$('#FullName').append(result.firstName + ' ' + result.lastName)
+			$('#phone').append(result.phone)
+			$('#address').append(result.address)
+		},
+		error: function (textStatus, errorThrown) {
+			console.log(errorThrown);
+			console.log(textStatus);
+		}
+	});
 
 	$("#getSelectedYear").click(function () {
 		$.ajax({

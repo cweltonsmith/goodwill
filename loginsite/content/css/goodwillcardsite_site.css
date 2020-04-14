@@ -247,6 +247,9 @@ input, select
    height:                       34px;
    padding-left:                 4px;
 }
+input {
+   filter: none;
+ }
 
 input[type=text]::-webkit-input-placeholder
 {

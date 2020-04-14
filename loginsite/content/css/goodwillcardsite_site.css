@@ -313,9 +313,8 @@ input[type=submit]
 
 input[type=password]
 {
-   border:                       1px solid;
+   border:                       1px solid transparent;
    background-color:             #edb43b;
-   color:                        #fff;
    font-size:                    .8em;
    padding:                      0 10px;
 }
@@ -327,12 +326,12 @@ input[type=submit]:hover
 
 input:required
 {
-   background:                   #fff url(../img/red_asterisk16.png) no-repeat 98% center;
+   background:                   #fff url(../img/goodwillcardsite_red_asterisk16.png) no-repeat 98% center;
 }
 
 select:required
 {
-   background:                   #fff url(../img/red_asterisk16.png) no-repeat 70% center;
+   background:                   #fff url(../img/goodwillcardsite_red_asterisk16.png) no-repeat 70% center;
 }
 
 input:required, select:required

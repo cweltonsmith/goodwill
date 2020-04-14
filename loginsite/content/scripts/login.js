@@ -14,10 +14,14 @@ $(document).ready(function() {
 				localStorage.accessToken = result.accessToken;
 
 			},
-			error: function (textStatus, errorThrown) {
-				console.log(errorThrown);
-				console.log(textStatus);
-			}
+			error: (xhr, _, http_status) => {
+                if (xhr.responseJSON) {
+                    alert(xhr.responseJSON.error)
+                }
+                else {
+                    alert("Unexpected error: " + http_status)
+                }
+            }
 		});
 
 	});

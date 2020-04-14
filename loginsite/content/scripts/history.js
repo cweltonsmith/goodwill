@@ -14,9 +14,13 @@ $(document).ready(function () {
 			$("#selYear").html(listItems);
 
 		},
-		error: function (textStatus, errorThrown) {
-			console.log(errorThrown);
-			console.log(textStatus);
+		error: (xhr, _, http_status) => {
+			if (xhr.responseJSON) {
+				alert(xhr.responseJSON.error)
+			}
+			else {
+				alert("Unexpected error: " + http_status)
+			}
 		}
 	});
 	$.ajax({
@@ -33,9 +37,13 @@ $(document).ready(function () {
 			$('#address').append(result.address.line1 + ' ' + result.address.line2 + ' ' + '<br />' +
 			 result.address.city + ', ' + result.address.state + ' ' + result.address.zip)
 		},
-		error: function (textStatus, errorThrown) {
-			console.log(errorThrown);
-			console.log(textStatus);
+		error: (xhr, _, http_status) => {
+			if (xhr.responseJSON) {
+				alert(xhr.responseJSON.error)
+			}
+			else {
+				alert("Unexpected error: " + http_status)
+			}
 		}
 	});
 

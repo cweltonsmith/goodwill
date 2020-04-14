@@ -1,5 +1,6 @@
-$(document).ready(function () {
-	$("#getLoginInformation").click(function () {
+$(document).ready(function() {
+	$("#loginformsubmit").submit(function (e) {
+		e.preventDefault();
 		let person = new Object();
 		person.loyaltyID = $('#loyaltyID').val();
 		person.password = $('#txtPassword').val();

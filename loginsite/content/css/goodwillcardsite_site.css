@@ -71,10 +71,11 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    border-radius:                14px;
    height:                       30%;
    width:                        25%;
+   min-width: 15%;
    margin: 0 auto;
-   position:                     relative;
+   position: var(--center);
    text-align: center;
-   justify-content: space-between;
+   justify-content: center;
    background-color: rgb(236, 236, 236);
 }
 
@@ -148,8 +149,10 @@ header, footer
 
 .login
 {
+   justify-self:                 center;
+   width: 50%;
+   display: inline-block;
    text-align: left;
-   padding-left: 67px;
    padding-top: 40px;
 
 }
@@ -214,10 +217,9 @@ header, footer
    /* grid-column:                  3 / span 2;
    grid-row:                     4; */
    justify-self:                 center;
-   padding-left: 60px;
-   padding-right: 60px;
    padding-bottom: 30px;
    display: inline-block;
+   width: 70%;
 }
 
 .printbtnview

@@ -89,21 +89,18 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    /* Break down menu items into vertical */
    #site-navigation ul li {
      display: block;
-     top: 50px;
+     
    }
  
    /* Toggle show/hide menu on checkbox click */
 
    #site-navigation input:checked ~ ul {
      display: block;
+     margin-top: 50px;
    }
    #site-navigation ul {
-      display: none;
-      
-    }
-    
-
-   
+      display: none;   
+    }  
  }
  
 

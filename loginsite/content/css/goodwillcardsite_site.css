@@ -257,7 +257,7 @@ header, footer
 
 }
 
-.btnview
+.loginBtnview
 {
    /* grid-column:                  3 / span 2;
    grid-row:                     4; */
@@ -265,6 +265,18 @@ header, footer
    padding-bottom: 30px;
    display: inline-block;
    width: 70%;
+}
+
+.btnview
+{
+   /* grid-column:                  3 / span 2;
+   grid-row:                     4; */
+
+   justify-self:                 center;
+   padding-bottom: 30px;
+   padding-left: 50px;
+   display: inline-block;
+   width: 150px;
 }
 
 .printbtnview

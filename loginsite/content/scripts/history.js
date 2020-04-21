@@ -1,3 +1,4 @@
+// Authors: Chase Smith, Sam Eagan - Whole Page
 $(document).ready(function () {
 	let accessToken = localStorage.getItem('accessToken');
 	$.ajax({

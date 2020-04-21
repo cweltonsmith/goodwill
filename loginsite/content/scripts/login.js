@@ -1,5 +1,6 @@
 // Authors: Chase Smith, Sam Eagan - Whole Page
 $(document).ready(function() {
+
 	$("#loginformsubmit").submit(function (e) {
 		e.preventDefault();
 		let person = new Object();

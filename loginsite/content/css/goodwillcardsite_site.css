@@ -58,6 +58,55 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    margin:                       0 auto;
 } */
 
+ 
+ /* Hide Hamburger */
+ #site-navigation label, #hamburger {
+   display: none;
+   float: right;
+ }
+ 
+ /* Menu Items */
+ #site-navigation ul {
+   list-style-type: none;
+ }
+ #site-navigation ul li {
+   display: inline-block;
+ }
+
+ 
+ /* [ON SMALL SCREENS] */
+ @media screen and (max-width: 768px){
+   /* Show Hamburger */
+   #site-navigation label {
+      height: 60px;
+      padding: 0 20px;     
+      line-height: 60px;     
+      font-size: 24px;
+      float: left;
+      display: inline-block;
+   }
+ 
+   /* Break down menu items into vertical */
+   #site-navigation ul li {
+     display: block;
+     top: 50px;
+   }
+ 
+   /* Toggle show/hide menu on checkbox click */
+
+   #site-navigation input:checked ~ ul {
+     display: block;
+   }
+   #site-navigation ul {
+      display: none;
+      
+    }
+    
+
+   
+ }
+ 
+
 .banner
 {
    margin-bottom:                20px;

@@ -1,7 +1,9 @@
 
+
 @media print
 {
    *
+   
    {
       color:                  #333;
       background-color:       initial;
@@ -92,25 +94,26 @@
    {
       display:                none;
    }
+   .donations{
+      width: 100%;
+   }
 
    .donations table
    {
       border:                    var(--donator-border);
       border-radius:                14px;
       border-spacing:            1px;
-      box-shadow:                var(--shadow);
       background-color: rgb(236, 236, 236);
-   
       text-align:                left;
       margin:                    var(--center);
       padding:                   10px;
-      width:                     90%;
-      min-width:                 600px;
+      min-width:                     90%;
    }
+ 
 
    .donations table thead tr th
    {
-      color:                  #333;
+
       padding-left:           4px;
       
    }

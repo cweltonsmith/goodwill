@@ -1,17 +1,67 @@
-# goodwill
-Omaha Goodwill website
+# Low Level Design
+ Ajax calls to the API 
+## Get Customer Login Information
+	$("#BUTTON").submit(function () {
+		let person = new Object();
+		person.loyaltyID = $('#loyaltyID').val();
+		person.password = $('#txtPassword').val();
+		$.ajax({
+			url: 'https://goodwill-nw2020.herokuapp.com/customer/login',
+			type: 'POST',
+			dataType: 'json',
+			data: person,
+			success: function (result) {
+				window.location = "donationhistory.html";
+				localStorage.accessToken = result.accessToken;
+			},
+## Get Customer History Based On Year Selection
+    $.ajax({
+		url: 'https://goodwill-nw2020.herokuapp.com/customer/history',
+		headers: {
+			"Authorization": "Bearer " + accessToken
+		},
+		type: 'GET',
+		success: function (result) {
+			let listItems = '<option selected="selected" value="0">- Select -</option>';
+			for (let i = 0; i < result.taxYears.length; i++) {
+				listItems += "<option value='" + result.taxYears[i] + "'>" 
+        + result.taxYears[i] + "</option>";
+			}
+			$("#selYear").html(listItems);
+		},
+    
+## Get Customer Info
+    $.ajax({
+		url: 'https://goodwill-nw2020.herokuapp.com/customer/info',
+		headers: {
+			"Authorization": "Bearer " + accessToken
+		},
+		type: 'GET',
+		success: function (result) {
+			console.log(result)
+			$('#loyaltyID2').append(result.loyaltyID)
+			$('#FullName').append(result.firstName + ' ' + result.lastName)
+			$('#phone').append(result.phone)
+			$('#address').append(result.address.line1 + ' ' + result.address.line2 + ' ' + '<br />' +
+			 result.address.city + ', ' + result.address.state + ' ' + result.address.zip)
+		},
+  
+## Get Customer Donation History
+    $("#getSelectedYear").click(function () {
+		$.ajax({
+			url: 'https://goodwill-nw2020.herokuapp.com/customer/history/year/' + $("#selYear").val(),
+			headers: {
+				"Authorization": "Bearer " + accessToken
+			},
+			type: 'GET',
+			success: function (result) {
+				console.log(result);
+				donationTable = $("#donations tbody")
+				donationTable.empty()
+				if (result.history.length == 0) {
+              POPULATE DONATION TABLE HERE
+					}
+				}
 
-Original website is [here](https://www.goodwillomaha.org/){:target="_blank"}
-
-## Sprint 1: 
-- Focus on getting the login page with the correct nav/footer/ as well as CSS.
-- Make sure the login is validated and user cannot continue to year selection unless validated
-
-## Sprint 2:
-- Start year selection page. Make sure we can properly call the database with the correct information.
-
-## Sprint 3:
-- Get the year selection page finished and start working on the history Page.
-
-## Sprint 4:
-- Finish the printable Page.
+			},
+  

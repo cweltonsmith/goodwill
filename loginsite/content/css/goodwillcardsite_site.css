@@ -124,6 +124,7 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    background-color: rgb(236, 236, 236);
 }
 
+
 .form-wrapper-yearSelection
 {
    font-size:                    1.4em;
@@ -131,7 +132,7 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    box-shadow:                   4px 5px 8px;
    border-radius:                14px;
    height:                       30%;
-   width:                        50%;
+   width:                        49%;
    margin: 0 auto;
    position:                     relative;
    text-align: center;
@@ -152,7 +153,7 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    padding-left: 1%;
    margin-left: 5%;
    margin-right: 1%;
-   margin-bottom: 1%;
+   margin-bottom: -.5%;
    position:                   relative;
    float: left;
    justify-content: space-between;
@@ -576,6 +577,7 @@ a img
    padding:                   10px;
    width:                     90%;
    min-width:                 600px;
+   
 }
 .donations table tr td
 {
@@ -591,23 +593,47 @@ a img
    color:                     var(--donator-txt-color);
    padding:                   4px 0;
    border-bottom:             1px solid #ccc;
+   
 }
 
+.donations 
+{ 
+   display: inline-block;
+   width: 90%;
+  overflow-x: auto;
+
+  
+}
+
+.container {
+   overflow-y: scroll;
+   scrollbar-width: none; /* Firefox */
+   -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.container::-webkit-scrollbar { /* WebKit */
+   width: 0;
+   height: 0;
+}
 .donations table thead tr:first-child th:first-child
 {
    text-align:                center;
    vertical-align:            middle;
-   width:                     200px;
+   width:                     150px;
    padding-left:             -2px;
+   
 }
 
 .donations table thead tr:last-child th:nth-child(1)
 {
     text-align:               center;
 }
-.donations table tbody tr td:nth-child(3), .donations table tbody tr td:nth-child(4)
+.donations table tbody tr td:nth-child(3)
 {
     width:                    100px;
+}
+
+.donations table tbody tr td:nth-child(4) {
+   width:                    175px;
 }
 
 .donations table tbody tr td:first-child

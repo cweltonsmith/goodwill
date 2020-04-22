@@ -1,6 +1,6 @@
 # Low Level Design
  Ajax calls to the API 
-## Get Customer Login Information
+## Customer Login Request
 	$("#BUTTON").submit(function () {
 		let person = new Object();
 		person.loyaltyID = $('#loyaltyID').val();
@@ -14,7 +14,7 @@
 				window.location = "donationhistory.html";
 				localStorage.accessToken = result.accessToken;
 			},
-## Get Customer History Based On Year Selection
+## Get Customer's List of Tax years
     $.ajax({
 		url: 'https://goodwill-nw2020.herokuapp.com/customer/history',
 		headers: {
@@ -30,7 +30,7 @@
 			$("#selYear").html(listItems);
 		},
     
-## Get Customer Info
+## Get Customer Information
     $.ajax({
 		url: 'https://goodwill-nw2020.herokuapp.com/customer/info',
 		headers: {
@@ -46,7 +46,7 @@
 			 result.address.city + ', ' + result.address.state + ' ' + result.address.zip)
 		},
   
-## Get Customer Donation History
+## Get Customer History For a Current Year
     $("#getSelectedYear").click(function () {
 		$.ajax({
 			url: 'https://goodwill-nw2020.herokuapp.com/customer/history/year/' + $("#selYear").val(),
@@ -59,9 +59,27 @@
 				donationTable = $("#donations tbody")
 				donationTable.empty()
 				if (result.history.length == 0) {
-              POPULATE DONATION TABLE HERE
+              				POPULATE DONATION TABLE HERE
 					}
 				}
 
 			},
   
+
+## HTML Page Layout
+	<html>	
+		<head>
+			<link></link>
+		</head>
+		<body>
+			<header>
+				<nav>
+				</nav>
+			</header>
+			<div>
+			</div>
+			<footer>
+			</footer>
+			<script></script>
+		</body>
+	</html>

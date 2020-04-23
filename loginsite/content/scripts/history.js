@@ -31,7 +31,6 @@ $(document).ready(function () {
 		},
 		type: 'GET',
 		success: function (result) {
-			console.log(result)
 			$('#loyaltyID2').append(result.loyaltyID)
 			$('#FullName').append(result.firstName + ' ' + result.lastName)
 			$('#phone').append(result.phone)
@@ -56,7 +55,6 @@ $(document).ready(function () {
 			},
 			type: 'GET',
 			success: function (result) {
-				console.log(result);
 				donationTable = $("#donations tbody")
 				donationTable.empty()
 				if (result.history.length == 0) {
@@ -117,9 +115,13 @@ $(document).ready(function () {
 				}
 
 			},
-			error: function (textStatus, errorThrown) {
-				console.log(errorThrown);
-				console.log(textStatus);
+			error: (xhr, _, http_status) => {
+				if (xhr.responseJSON) {
+					alert(xhr.responseJSON.error)
+				}
+				else {
+					alert("Unexpected error: " + http_status)
+				}
 			}
 		});
 	});

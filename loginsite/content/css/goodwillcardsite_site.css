@@ -151,7 +151,7 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    width:                        30%;
    margin: 0 auto;
    padding-left: 1%;
-   margin-left: 5%;
+   margin-left: 9%;
    margin-right: 1%;
    margin-bottom: -.5%;
    position:                   relative;
@@ -577,6 +577,7 @@ a img
    padding:                   10px;
    width:                     90%;
    min-width:                 600px;
+   margin-left: 10%;                   
    
 }
 .donations table tr td
@@ -598,7 +599,6 @@ a img
 
 .donations 
 { 
-   display: inline-block;
    width: 90%;
   overflow-x: auto;
 

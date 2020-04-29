@@ -4,6 +4,7 @@
 {
    *
    
+   
    {
       color:                  #333;
       background-color:       initial;
@@ -13,6 +14,7 @@
       display:                none;
       margin:                 0;
    }
+
 
    .wrapper
    {
@@ -108,6 +110,7 @@
       margin:                    var(--center);
       padding:                   10px;
       min-width:                     90%;
+      
    }
  
 
@@ -126,6 +129,7 @@
    .form-wrapper-yearSelection{
 
       float: right;
+      width: 40%;
 
    }
    .form-wrapper-user{

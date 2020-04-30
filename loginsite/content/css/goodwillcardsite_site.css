@@ -33,8 +33,8 @@ X  Alt-Light      - rgb(255, 240, 207) / #fff0cf
    --donator-txt-color:				var(--donation-txt-color);
    --donator-border:					1px solid #808080;
    --donator-bgcolor:				var(--donator-clr-light);
-   --donator-clr-light:				 #edb43b;
-   --donator-clr-med:			     rgb(78,116,162);
+   --donator-clr-light:				 rgb(241, 241, 241);
+   --donator-clr-med:			     rgb(188, 210, 255);
    --donator-clr-dark:				#f19900;
    --donator-clr-darker:			rgb(241, 153, 0);
 
@@ -640,15 +640,16 @@ a img
     width:                    50px;
 }
 
-.donations table tbody tr:nth-child(odd)
-{
-   background-color:          var(--donation-odd-row);
-}
 
-.donations table tbody tr:nth-child(even)
-{
-   background-color:          var(--donation-even-row);
-}
+.rowcolor
+{background-color: rgb(241, 241, 241);}
+
+.rowcolor2
+{background-color: rgb(188, 210, 255);}
+	
+						
+
+
 
 .donations table tbody tr:nth-child(odd) td
 {

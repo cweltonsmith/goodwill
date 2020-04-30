@@ -68,6 +68,7 @@ $(document).ready(function () {
 			//ON Success populations donation history table
 			success: function (result) {
 				//Creating empty table
+				count = 0;
 				donationTable = $("#donations tbody")
 				donationTable.empty()
 				//Prints Error Message in table if their is no history
@@ -101,20 +102,25 @@ $(document).ready(function () {
 
 					donationTable.append(trow)
 				}
+				
 				//Looping through table for multiple items
 				//This populates the table with data if length > 0
 				for (let i = 0; i < result.history.length; i++) {
 					// this assumes result.history[i].items.length >= 1
 					for (let j = 0; j < result.history[i].items.length; j++) {
-						trow = $("<tr>")
-						//Date Cell
 						dateCell = $("<td>")
-						// One date cell for the entire transaction
-						if (j == 0) {
+						//If first cell include date
+						if(j==0){
 							dateCell.text(result.history[i].date)
 						}
+						//Changes color based on transaction
+						if (i%2== 0) {
+							trow = $("<tr class='rowcolor2'>")
+						}
+						else{
+							trow = $("<tr class='rowcolor'>")
+						}
 						trow.append(dateCell)
-
 						//Quantity Cell
 						itemCellQuant = $("<td>")
 						itemCellQuant.text(result.history[i].items[j].quantity)
@@ -137,8 +143,12 @@ $(document).ready(function () {
 
 						//Adds row(whole transaction) to table
 						donationTable.append(trow)
+							
 					}
+					
+
 				}
+
 
 			},
 			//Else Prints Error
